@@ -19,7 +19,7 @@ import lombok.NoArgsConstructor;
 public class Follow {
     
     @Id
-    @ManyToOne()
+    @ManyToOne
     @JoinColumn(name = "following_user_id" , nullable = false)
     private User followingUser;
 
